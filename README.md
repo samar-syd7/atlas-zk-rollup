@@ -132,15 +132,27 @@ atlas-zk-rollup/
 │
 ├── crates/
 │   ├── prover/
+│   │   ├── benches/
+│   │   ├── examples/
+│   │   └── src/
+│   │
 │   ├── sequencer/
+│   │   └── src/
+│   │
 │   ├── primitives/
+│   │   └── src/
+│   │
 │   ├── contracts/
+│   │   ├── src/
+│   │   ├── script/
+│   │   └── test/
+│   │
 │   └── node/
 │
-├── scripts/
-├── benches/
-├── .github/
-└── docker/
+├── Cargo.toml
+├── Cargo.lock
+├── README.md
+└── .gitignore
 ```
 
 ---
