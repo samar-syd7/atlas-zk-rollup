@@ -1,0 +1,20 @@
+target/
+.env
+
+# RocksDB
+rollup_db/
+
+# Rust
+Cargo.lock
+
+# Foundry
+broadcast/
+cache/
+out/
+
+# VSCode
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
