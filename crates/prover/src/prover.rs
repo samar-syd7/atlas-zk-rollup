@@ -39,6 +39,14 @@ pub struct ProverEngine {
     sender: mpsc::Sender<ProofJob>,
 }
 
+impl Default for ProverEngine {
+
+    fn default() -> Self {
+
+        Self::new()
+    }
+}
+
 impl ProverEngine {
 
     pub fn new() -> Self {
