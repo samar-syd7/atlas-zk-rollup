@@ -26,6 +26,13 @@ jobs:
       - name: Cache Cargo
         uses: Swatinem/rust-cache@v2
 
+      - name: Install Foundry
+        uses: foundry-rs/foundry-toolchain@v1
+
+      - name: Build Solidity Contracts
+        working-directory: crates/contracts
+        run: forge build
+
       - name: Build Workspace
         run: cargo build --workspace --all-targets
 
