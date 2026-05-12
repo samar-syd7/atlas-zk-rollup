@@ -1,0 +1,20 @@
+[advisories]
+
+ignore = [
+
+    # ethers-rs transitive dependency chain
+    "RUSTSEC-2025-0009",
+    "RUSTSEC-2025-0010",
+
+    # rustls ecosystem issues
+    "RUSTSEC-2026-0104",
+    "RUSTSEC-2026-0098",
+    "RUSTSEC-2026-0099",
+
+    # unmaintained ecosystem warnings
+    "RUSTSEC-2025-0141",
+    "RUSTSEC-2025-0057",
+    "RUSTSEC-2024-0384",
+    "RUSTSEC-2024-0436",
+    "RUSTSEC-2025-0134",
+]
