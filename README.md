@@ -410,6 +410,16 @@ cargo run -p sequencer
 
 ---
 
+# Docker Deployment
+
+Build and run locally:
+
+```bash
+docker compose up --build
+```
+
+---
+
 # Start RPC Node
 
 RPC server:

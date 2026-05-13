@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+
+  sequencer:
+
+    build: .
+
+    container_name: atlas-sequencer
+
+    ports:
+      - "3000:3000"
+
+    environment:
+      SEPOLIA_RPC_URL: ${SEPOLIA_RPC_URL}
+      PRIVATE_KEY: ${PRIVATE_KEY}
+      CONTRACT_ADDRESS: ${CONTRACT_ADDRESS}
+
+    volumes:
+      - ./rollup_db:/app/rollup_db
+
+    restart: unless-stopped
